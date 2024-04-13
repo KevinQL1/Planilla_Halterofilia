@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom"; // Importa Navigate desde react-router-dom
+import User from "./Components/User/User";
+import TableCompetition from "./Components/CompetitionTable/CompetitionTable";
+import TablePoins from "./Components/TablePoints/TablePoins";
+import { TablaProvider } from "./Data/TableData"; // Importa el TablaProvider
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  const handleLogin = (username) => {
+    setUser(username);
+  };
+
+  const handleLogout = () => {
+    setUser(null);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TablaProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              user ? (
+                <div className="boton-cerrar">
+                  <button className="boton-cerrar" onClick={handleLogout}>
+                    Cerrar Sesión
+                  </button>
+                  <Navigate to="/TablaDeCompeticion" />
+                </div>
+              ) : (
+                <User onLogin={handleLogin} />
+              )
+            }
+          ></Route>
+          <Route
+            path="/TablaDeCompeticion"
+            element={<TableCompetition />}
+          ></Route>
+          <Route path="/TablaDePuntajes" element={<TablePoins />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </TablaProvider>
   );
 }
 

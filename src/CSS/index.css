@@ -1,0 +1,251 @@
+	* {
+		background-color: black;
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 0;
+		padding: 0;
+	}
+
+	/********************* INICIO DE SESIÓN *********************/
+
+	.sin-subrayado {
+		text-decoration: none;
+	}
+
+	.contenerdor-login {
+		width: 30%;
+		height: 90vh;
+		margin: 2.2rem auto 0rem auto;
+		border: 0.1rem solid white;
+		border-radius: 100%;
+		background-color: black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.contenerdor-iniciar-sesion {
+		width: 100%;
+	}
+
+	.iniciar-sesion {
+		color: white;
+		text-align: center;
+		font-size: 2.3rem;
+		text-decoration: none;
+		margin-top: 2rem;
+	}
+
+	.contenedor-nombre-usuario,
+	.contenedor-contrasena {
+		margin: 2rem;
+	}
+
+	.nombre-usuario,
+	.contrasena {
+		color: white;
+		font-size: 1.3rem;
+
+	}
+
+	.input-nombre-usuario,
+	.input-contrasena {
+		margin-top: 1rem;
+		background-color: white;
+		color: black;
+		height: 2rem;
+		border-radius: 1rem;
+		font-size: 1.2rem;
+
+	}
+
+	.contenedor-boton-iniciar-sesion {
+		text-align: center;
+	}
+
+
+	.boton-iniciar-sesion {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	/********************* TITULOS Y SUBTITULOS *********************/
+
+	.contenedor-total{
+		display: flex;
+		width: 100%;
+		justify-content:center;
+		align-items: center;
+		margin: auto;
+		text-align: center;
+	}
+
+  .imagen{
+	justify-content: left;
+	align-items: center;
+	margin: auto;
+  }
+
+  .img{
+	margin: auto 1rem auto 1rem;
+	align-items: center;
+	border-radius: 20%;
+	border: 2px  solid white;
+  }
+	.titulos {
+		width: 100%;
+		margin: auto;
+		text-decoration: none;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.h1 {
+		color: white;
+		text-align: center;
+		font-size: 2.3rem;
+		text-decoration: none;
+		align-items: center;
+		justify-content: center;
+		width: 90%;
+	}
+
+	.subTitulos {
+		display: flex;
+		width: 70%;
+		justify-content:center;
+		align-items: center;
+		margin: auto;
+		text-align: center;
+	}
+
+	.h2 {
+		display: flex;
+		color: white;
+		text-align: center;
+		font-size: 1.8rem;
+		width: 50%;
+		margin: auto 1rem auto;
+	}
+
+	/********************* TABLA DE COMPETENCIA Y PUNTUACION *********************/
+
+	.body {
+		width: 100%;
+		margin-top: 2rem;
+	}
+
+	table,
+	th,
+	td {
+		border-collapse: collapse;
+		padding: .1rem;
+		margin: 2rem auto;
+		border: .1rem solid white;
+		color: white;
+		text-align: center;
+		height: 1rem;
+	}
+
+	.resultado,
+	.total,
+	.sinclair {
+		background-color: yellow;
+		color: black;
+	}
+
+	form {
+		display: flex;
+		width: 75%;
+		margin: auto;
+	}
+
+	.form-tabla-puntaje {
+		justify-content: center;
+	}
+
+	button {
+		width: 25%;
+		border: .1rem solid white;
+		margin: auto 2rem auto;
+		color: white;
+	}
+
+	.link-TablaDePuntajes {
+		width: 25%;
+		margin: auto 2rem auto;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.boton-TablaDePuntajes {
+		width: 100%;
+		border: .1rem solid white;
+		text-align: center;
+		color: white;
+		margin: auto;
+	}
+
+	input {
+		width: 100%;
+		border: 0;
+		color: white;
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.table {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.fondoRojo {
+		background-color: red;
+	}
+
+	.fondoAzul {
+		background-color: blue;
+	}
+
+	.fondoNegro {
+		background-color: black;
+	}
+
+	.linea-divisoria {
+		background-color: green;
+	}
+
+	.input-divisoria {
+		width: 95%;
+		height: 100%;
+		background-color: green;
+		text-align: left;
+		color: white;
+		border: 0;
+	}
+
+	.boton-cerrar {
+		background-color: green;
+		width: 100%;
+	}
+
+	.link-Atras {
+		margin: auto 2rem auto;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		text-align: center;
+	}
+
+	.td-divisoria {
+		background-color: green;
+		text-align: left;
+		width: 95%;
+		color: white;
+		padding-left: 2rem;
+	}
+
+	.capture-mode th[rowspan] {
+		transform: translateY(0%);
+	  }
